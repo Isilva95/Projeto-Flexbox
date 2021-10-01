@@ -1,13 +1,18 @@
+* {
+  font-family: Arial;
+}
 body {
   margin: 0;
   padding: 0;
 }
 
+/* Cabeçalho do site */
 header {
   display: flex;
   justify-content: center;
   height: 120px;
 }
+/* Espaço total do cabeçalho */
 .container {
   display: flex;
   justify-content: space-between;
@@ -21,6 +26,7 @@ header {
   display: flex;
   align-items: center;
 }
+/* Navegação do menu */
 nav ul,
 nav li {
   list-style: none;
@@ -37,7 +43,6 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: #727272;
-  font-family: Arial;
 }
 nav .active a,
 nav a:hover {
@@ -45,9 +50,102 @@ nav a:hover {
   color: #FFFFFF;
 }
 
+/* Imagem do banner */
 #banner {
+  display: flex;
+  justify-content: center;
   background-image: url('../images/img1.jpg');
   background-position: center;
   background-size: cover;
   height: 670px;
+}
+/* div com os dois campos de conteúdos (headline e options) dentro do banner em coluna */
+.column {
+  flex-direction: column;
+}
+/* Espaço da área dos textos */
+.banner_headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Textos no banner */
+.banner_headline h1 {
+  color: #FFFFFF;
+  font-size: 70px;
+  text-shadow: 0px 1px 0px #555555;
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+}
+.banner_headline h2 {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-shadow: 0px 1px 0px #555555;
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+  margin-top: 30px;
+}
+/* Espaço da área de opções no banner */
+.banner_options {
+  height: 210px;
+  display: flex;
+}
+.banner1,
+.banner2,
+.banner3 {
+  flex: 1;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.banner1 {
+  background-color: #39aae1;
+}
+.banner2 {
+  background-color: #0079c7;
+}
+.banner3 {
+  background-color: #2b4c99;
+}
+.banner_title {
+  font-size: 21px;
+}
+.banner_desc {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.banner_options a {
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  padding: 5px;
+  color: #FFFFFF;
+  font-size: 13px;
+  text-decoration: none;
+}
+.banner_friday {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #FFFFFF;
+}
+.day,
+.hora {
+  padding-bottom: 10px;
+}
+
+/*  */
+#geral {
+  display: flex;
+  justify-content: center;
+}
+#geral section {
+  flex: 2;
+}
+#geral aside {
+  flex: 1;
 }
