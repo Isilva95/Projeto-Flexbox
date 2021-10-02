@@ -138,7 +138,7 @@ nav a:hover {
   padding-bottom: 10px;
 }
 
-/*  */
+/* Conteúdo geral do site */
 #geral {
   display: flex;
   justify-content: center;
@@ -148,4 +148,58 @@ nav a:hover {
 }
 #geral aside {
   flex: 1;
+}
+.widget_title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.widget_title_text {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+}
+.widget_title_bar {
+  width: 50px;
+  height: 2px;
+  background-color: #36a9e1;
+  margin-top: 10px;
+}
+/* .widget_body {
+  display: flex;
+  flex-direction: column;
+} */
+.widget_body_conteudo {
+  display: flex;
+  justify-content: space-between;
+}
+.widget_body_conteudo div {
+  width: 140px;
+  height: 140px;
+  background-color: #39aae1;
+  margin-bottom: 45px;
+}
+.widget_body p{
+  font-size: 12px;  
+}
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.contact li {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #999999;
+  gap: 5px;
+}
+.archive {
+  border-bottom: 1px solid #999999;
+}
+.contact li a {
+  text-decoration: none;
+  color: #36a9e1;
+  font-weight: bold;
 }
