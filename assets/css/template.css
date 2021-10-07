@@ -178,6 +178,7 @@ nav a:hover {
   width: 145px;
   height: 145px;
   background-color: #39aae1;
+  cursor: pointer;
 }
 /* Conteúdo de Contato */
 .widget_body p{
@@ -303,7 +304,7 @@ footer {
 footer .widget_title_text {
   color: #FFFFFF;
 }
-
+/* Área Medicenter Clinic */
 .widget_area_desc {
   font-size: 14px;
   color: #727272;
@@ -323,7 +324,7 @@ footer .widget_title_text {
   text-decoration: none;
   color: #FFFFFF;
 }
-
+/* Área Latest Posts */
 .widget_area2_desc {
   display: flex;
   color: #FFFFFF;
@@ -346,8 +347,9 @@ footer .widget_title_text {
   font-size: 14px;
   color: #36a9e1;
   margin: 0;
+  cursor: pointer;
 }
-
+/* Área Latest Tweets */
 .widget_area3_desc {
   display: flex;
   color: #727272;
@@ -360,8 +362,9 @@ footer .widget_title_text {
   font-size: 14px;
   color: #36a9e1;
   margin: 0;
+  cursor: pointer;
 }
-
+/* Área Coyrigth */
 .footer_copy {
   border-top: 1px solid #2c2c2c;
   height: 40px;
@@ -372,4 +375,95 @@ footer .widget_title_text {
 }
 .footer_copy span {
   color: #FFFFFF;
+}
+/* Menu Mobile */
+.menuMobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+.mm_line {
+  height: 3px;
+  background-color: #39aae1;
+}
+
+
+/* Responsividade */
+
+@media (max-width:600px) {
+  /* Área do banner - textos */
+  .banner_headline {
+    padding: 20px;
+  }
+  .banner_headline h1 {
+    font-size: 55px;
+  }
+  .banner_headline h2 {
+    font-size: 17px;
+  }
+  /* Área do banner - opções */
+  .banner_options {
+    height: auto;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  /* Área de conteúdos */
+  .container {
+    flex-direction: column;
+  }
+  /* Conteúdo principal */
+  #geral section {
+    padding: 20px;
+    margin-top: 155px;
+  }
+  /* Conteúdo departamentos */
+  #geral aside {
+    padding: 20px;
+    margin-top: -70px;
+  }
+
+  /* Menu do footer */
+  .footer_menu {
+    flex-direction: column;
+  }
+  /* Área de contatos - footer */
+  .footer_area {
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: -40px;
+  }
+  .seta_2 {
+    width: 30px;
+  }
+
+  /* Área do autor */
+  .footer_copy {
+    padding-left: 20px;
+  }
+
+  /* Área do cabeçalho - header */
+  header .container {
+    flex-direction: row;
+  }
+  /* Header - menu */
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  header {
+    height: auto;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
 }
