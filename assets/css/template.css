@@ -391,7 +391,7 @@ footer .widget_title_text {
 }
 
 
-/* Responsividade */
+/* Responsividade com máximo 600px */
 
 @media (max-width:600px) {
   /* Área do banner - textos */
@@ -453,6 +453,10 @@ footer .widget_title_text {
   nav ul {
     flex-direction: column;
     display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
   }
   header {
     height: auto;
@@ -465,5 +469,122 @@ footer .widget_title_text {
     flex-direction: column;
     justify-content: space-around;
   }
+}
 
+
+/* Responsividade com mínimo 599px e máximo 930px */
+
+@media (min-width:599px) and (max-width:930px) {
+  /* Área do banner - textos */
+  .banner_headline {
+    padding: 20px;
+  }
+  .banner_headline h1 {
+    font-size: 55px;
+  }
+  .banner_headline h2 {
+    font-size: 17px;
+  }
+  /* Área do banner - opções */
+  .banner_options {
+    height: auto;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  /* Área de conteúdos */
+  .container {
+    flex-direction: column;
+  }
+  /* Conteúdo principal */
+  #geral section {
+    padding: 20px;
+    margin-top: 155px;
+  }
+  /* Conteúdo departamentos */
+  #geral aside {
+    padding: 20px;
+    margin-top: -70px;
+  }
+  .widget_body_conteudo {
+    gap: 100px;
+  }
+
+  /* Menu do footer */
+  .footer_menu {
+    flex-direction: column;
+  }
+  /* Área de contatos - footer */
+  .footer_area {
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: -40px;
+  }
+  .seta_2 {
+    width: 30px;
+  }
+
+  /* Área do autor */
+  .footer_copy {
+    padding-left: 20px;
+  }
+
+  /* Área do cabeçalho - header */
+  header .container {
+    flex-direction: row;
+  }
+  /* Header - menu */
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+  header {
+    height: auto;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+
+/* Responsividade com mínimo 320px e máximo 370px */
+
+@media (min-width: 320px) and (max-width: 370px) {
+  #geral section {
+    margin-top: 230px;
+    margin-left: 20px;
+  }
+  #geral aside {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .footer_copy {
+    padding-left: 6px;
+    padding-right: 3px;
+    font-size: 11px;
+  }
+  .seta_2 {
+    width: 17px;
+  }
+}
+
+
+/* Responsividade com mínimo 320px e máximo 360px */
+
+@media (min-width: 320px) and (max-width: 360px) {
+  .footer_copy {
+    font-size: 11px;
+  }
+  .seta_2 {
+    width: 17px;
+  }
 }
